@@ -1,0 +1,132 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Reolink License Plate Detection",
+        "description": "Set up license plate detection with your Reolink cameras",
+        "data": {
+          "integration_name": "Integration Name"
+        }
+      },
+      "camera": {
+        "title": "Camera Configuration",
+        "description": "Configure your Reolink camera (Camera {camera_count})",
+        "data": {
+          "camera_name": "Camera Name",
+          "host": "IP Address",
+          "port": "Port",
+          "username": "Username", 
+          "password": "Password"
+        }
+      },
+      "detection_area": {
+        "title": "Detection Area",
+        "description": "Configure detection area for {camera_name}",
+        "data": {
+          "enable_detection_area": "Enable Detection Area",
+          "area_x": "X Position (0.0-1.0)",
+          "area_y": "Y Position (0.0-1.0)",
+          "area_width": "Width (0.1-1.0)",
+          "area_height": "Height (0.1-1.0)"
+        }
+      },
+      "detection_settings": {
+        "title": "Detection Settings",
+        "description": "Configure detection parameters",
+        "data": {
+          "detection_sensitivity": "Detection Sensitivity",
+          "min_confidence": "Minimum Confidence",
+          "cooldown_seconds": "Cooldown Period (seconds)"
+        }
+      },
+      "more_cameras": {
+        "title": "Additional Cameras",
+        "description": "You have configured {camera_count} camera(s). Add another?",
+        "data": {
+          "add_another_camera": "Add Another Camera"
+        }
+      },
+      "allowed_plates": {
+        "title": "Authorized License Plates",
+        "description": "Enter license plates that should trigger garage door opening (one per line or comma-separated)",
+        "data": {
+          "allowed_plates": "Allowed License Plates"
+        }
+      },
+      "garage_settings": {
+        "title": "Garage Door Settings",
+        "description": "Configure automatic garage door control",
+        "data": {
+          "garage_door_entity": "Garage Door Entity",
+          "enable_auto_garage": "Enable Automatic Garage Door",
+          "enable_notifications": "Enable Notifications",
+          "log_all_detections": "Log All Detections"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to camera. Check IP address, port, and credentials.",
+      "invalid_auth": "Invalid authentication credentials.",
+      "timeout": "Connection timeout. Check network connectivity.",
+      "garage_entity_not_found": "Garage door entity not found.",
+      "garage_entity_invalid": "Selected entity is not a valid garage door (cover entity).",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "Camera is already configured.",
+      "single_instance_allowed": "Only one instance of this integration is allowed."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Modify Settings",
+        "description": "Choose what you want to modify",
+        "data": {
+          "option_type": "Configuration Type"
+        }
+      },
+      "modify_cameras": {
+        "title": "Camera Settings",
+        "description": "Modify camera configuration",
+        "data": {
+          "cameras_info": "Current Cameras (Read-only)",
+          "add_new_camera": "Add New Camera",
+          "remove_camera": "Remove Camera"
+        }
+      },
+      "modify_plates": {
+        "title": "License Plates",
+        "description": "Modify allowed license plates",
+        "data": {
+          "allowed_plates": "Allowed License Plates"
+        }
+      },
+      "modify_detection": {
+        "title": "Detection Settings",
+        "description": "Modify detection parameters",
+        "data": {
+          "detection_sensitivity": "Detection Sensitivity",
+          "min_confidence": "Minimum Confidence", 
+          "cooldown_seconds": "Cooldown Period (seconds)"
+        }
+      },
+      "modify_garage": {
+        "title": "Garage Door Settings",
+        "description": "Modify garage door configuration",
+        "data": {
+          "garage_door_entity": "Garage Door Entity",
+          "enable_auto_garage": "Enable Automatic Garage Door"
+        }
+      },
+      "modify_notifications": {
+        "title": "Notification Settings",
+        "description": "Modify notification preferences",
+        "data": {
+          "enable_notifications": "Enable Notifications",
+          "log_all_detections": "Log All Detections"
+        }
+      }
+    }
+  }
+}
