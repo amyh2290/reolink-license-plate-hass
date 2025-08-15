@@ -1,0 +1,10 @@
+{
+  "name": "Reolink License Plate Detection",
+  "render_readme": true,
+  "domains": ["sensor", "binary_sensor", "switch", "camera"],
+  "iot_class": "Local Polling",
+  "homeassistant": "2023.4.0",
+  "content_in_root": false,
+  "country": ["AU", "US", "CA", "GB", "DE", "FR", "NL", "BE", "IT", "ES"],
+  "category": "integration"
+}
