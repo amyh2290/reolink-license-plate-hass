@@ -1,13 +1,13 @@
 {
   "domain": "reolink_license_plate",
   "name": "Reolink License Plate Detection",
-  "codeowners": ["@your-username"],
+  "codeowners": ["@amyh2290"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/your-username/reolink-license-plate",
+  "documentation": "https://github.com/amyh2290/reolink-license-plate-hass",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/your-username/reolink-license-plate/issues",
+  "issue_tracker": "https://github.com/amyh2290/reolink-license-plate-hass/issues",
   "quality_scale": "silver",
   "requirements": [
     "aiohttp>=3.8.0",
